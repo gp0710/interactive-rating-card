@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->  
   <title>Interactive Rating Component</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <div class="container">
@@ -20,22 +21,12 @@
     to help us improve our offering!</p>
     </div>
 
-    <div class="ratings">
-      <input type="radio" name="rating" value="1" id="1" class="rating">
-      <label for="1">1</label>
-
-      <input type="radio" name="rating" value="2" id="2">
-      <label for="2">2</label>
-      
-    
-      <input type="radio" name="rating" value="3" id="3">
-      <label for="3">3</label>
-    
-      <input type="radio" name="rating" value="4" id="4">
-      <label for="4">4</label>
-    
-      <input type="radio" name="rating" value="5" id="5">
-      <label for="5">5</label>
+    <div id="ratings">
+      <button type="button" class="btn">1</button>
+      <button type="button" class="btn active">2</button>
+      <button type="button" class="btn">3</button>
+      <button type="button" class="btn">4</button>
+      <button type="button" class="btn">5</button>
     </div>
 
   <input type="button" value="SUBMIT" id="submit-button" />
@@ -54,5 +45,6 @@
        Thank you state end -->
     </div>
   </div>
+  <script src="main.js"></script>
 </body>
 </html>

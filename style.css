@@ -20,11 +20,11 @@ body {
     font-family: 'Overpass', sans-serif;
     background: var(--very-dark-blue);
 }
-div.container, div.icon-star, div.ratings, div.rating {
+div.container, div.icon-star, div#ratings {
     display: flex;
 }
 
-div.icon-star, div.ratings {
+div.icon-star, div#ratings {
     justify-content: center;
 }
 
@@ -55,50 +55,38 @@ p {
     color: var(--light-grey)
 }
 
-div.ratings {
+div#ratings {
     column-gap: 12px;
 
 }
 
-div.ratings > button {
+/* button style */
+
+.btn {
+    background-color: hsla(213, 19%, 24%, 1); 
+    color: var(--light-grey);
+}
+
+div#ratings > .btn {
     align-items: center;
-    color: var(--medium-grey);
     border-radius: 50%;
     height: 2.7rem;
     width: 2.7rem;
     line-height: 2.7rem;
-    background-color: hsla(213, 19%, 24%, 1);
     text-align: center;
     font-size: 1rem;
     cursor: pointer;
     border: none;
+    outline: none;
 }
 
-div.ratings > button:hover {
+.btn:hover {
     color: var(--white);
-    background-color: var(--light-grey);
-}
-
-
-.ratings > label::before {
-    background-color: var(--orange);
-    color: var(--white);
-    content: attr(ratings) "1";
-}
-
-.ratings > label:hover:before,
-.ratings > label:hover ~ label:before {
-    opacity: 1 !important;
     background-color: var(--medium-grey);
 }
 
-.ratings > input:checked ~ label:before {
-    background-color: var(--medium-grey);
+.active {
     color: var(--white);
-}
-
-.ratings:hover > input:checked ~ label:before { 
-    opacity: 1;
     background-color: var(--orange);
 }
     
