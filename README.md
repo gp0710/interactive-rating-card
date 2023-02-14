@@ -25,10 +25,10 @@ Users should be able to:
 - See the "Thank you" card state after submitting a rating
 
 ### Screenshot
-![Screen Shot 2023-02-13 at 10 36 54 PM](https://user-images.githubusercontent.com/75948442/218632883-4bb71b9e-56b0-4f44-9d3a-572d8924f225.png)
-![Screen Shot 2023-02-13 at 10 36 29 PM](https://user-images.githubusercontent.com/75948442/218632821-64a8231f-8ff6-434f-ad3c-f65d334c66a2.png)
-![Screen Shot 2023-02-13 at 10 37 10 PM](https://user-images.githubusercontent.com/75948442/218632927-b9bf013e-7e8f-4158-885e-522543c81d89.png)
-![Screen Shot 2023-02-13 at 10 37 25 PM](https://user-images.githubusercontent.com/75948442/218632958-ac668f8b-4b91-4c8f-a8a1-e55214ce2f18.png)
+![Screen Shot 2023-02-13 at 10 36 54 PM](https://github.com/gp0710/interactive-rating-card/)
+![Screen Shot 2023-02-13 at 10 36 29 PM](https://github.com/gp0710/interactive-rating-card/)
+![Screen Shot 2023-02-13 at 10 37 10 PM](https://github.com/gp0710/interactive-rating-card/)
+![Screen Shot 2023-02-13 at 10 37 25 PM](https://github.com/gp0710/interactive-rating-card/)
 
 
 ### Links
