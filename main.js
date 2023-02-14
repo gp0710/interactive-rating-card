@@ -1,16 +1,34 @@
-var ratings = document.getElementById("ratings");
+//select the elements
+const star = document.querySelector(".icon-star");
+const ratings = document.querySelector("#ratings");
+const ratingBtn = document.querySelectorAll(".btn");
+const results = document.querySelector("#results");
+const ratingContainer = document.querySelector("#rating-component");
+const ratingValue = document.querySelector("#rating-value");
+const submit = document.querySelector("#submit-button");
 
-console.log(ratings);
-var btns = ratings.getElementsByClassName("btn");
-console.log(btns);
+results.style.display = "none"
 
-/* make highlighted button active */
-for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace("active", "");
-    this.className += " active";
-    });
-}
+submit.addEventListener("click", submitCall)
 
+function submitCall(e) {
+    e.preventDefault();
+    results.style.display = "flex"
+    ratingContainer.style.display = "none"
+    star.style.display = "none"
+} 
 
+//Add active class to rating
+//When another rating is clicked, remove the active class
+//Keep active class for current selection
+ratingBtn.forEach((rating) => {
+    console.log(rating.classList)
+    rating.addEventListener("click", function clickRating() {
+        const currentlyActive = document.querySelector(".btn.active");
+        if(currentlyActive) {
+            currentlyActive.classList.remove("active")
+        } 
+        rating.classList.add("active");
+        ratingValue.textContent = `You selected ${rating.textContent} out of 5`
+    })
+})
